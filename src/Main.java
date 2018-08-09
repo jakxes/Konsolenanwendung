@@ -3,6 +3,8 @@ import java.io.IOException;
 import java.lang.invoke.LambdaConversionException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.ArrayList;
+import java.util.Random;
 import java.util.Scanner;
 import java.util.logging.ConsoleHandler;
 
@@ -12,7 +14,7 @@ public class Main {
 	
 	public static String prefix = "< ";	
 	public static Langauges currentLangauge = Langauges.ENGLISH;
-	
+	static Thread thread;
 	public static void main(String[] args) throws IOException {
 		Scanner scanner = new Scanner(System.in);
 		 try {
@@ -220,6 +222,82 @@ public class Main {
             			"                \\/     \\/     \\/     \\/  \\/                                \\/ \r\n" + 
             			"");
             	System.exit(1);
+            } else if(eingabe.equalsIgnoreCase("spamming")) {
+            	ArrayList<String> hacked = new ArrayList<>();
+            	hacked.add("afjk29n454e56zujhgfoz8i67tzrfegt2e3wrhrfwujhgrfuijkawegtb");
+            	hacked.add("dfhgjk345dfdfhdhjghjkju67u46zrgthfgj456345asrfz35rgdfg6");
+            	hacked.add("dfgdfgfdtg237u95rtpghtqui234gfuigqzui4wegtfiqzug4fuiqz");
+            	hacked.add("dajkd2asdjkfhasdjghjklsdghjioöalehno<ahqenzöioq34h6iq3h4uihüo4");
+            	hacked.add("glklasfhuiaehhpöioeh4tpioöuhq3poö4ihtöq34jklthq4tö3hqöqk3hjtö3hq4i49f");
+            	hacked.add("drfgs+hdtjojthiöjsioörhjioösrhjtiojüäpauji<aWJ$TI'asd35");
+            	hacked.add("glnkj3<gtuiohaöSHG<Ahegujlhalikhgtaluhgruiahegluiahrguha09u");
+            	thread = new Thread() {
+					public void run() {
+						try {
+							new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+						} catch (InterruptedException e1) {
+							// TODO Auto-generated catch block
+							e1.printStackTrace();
+						} catch (IOException e1) {
+							// TODO Auto-generated catch block
+							e1.printStackTrace();
+						}
+						System.out.println("Unpacking virus...");
+						try {
+							thread.sleep(1000);
+						} catch (InterruptedException e1) {
+							// TODO Auto-generated catch block
+							e1.printStackTrace();
+						}
+						try {
+							new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+						} catch (InterruptedException e1) {
+							// TODO Auto-generated catch block
+							e1.printStackTrace();
+						} catch (IOException e1) {
+							// TODO Auto-generated catch block
+							e1.printStackTrace();
+						}
+						System.out.println("Starting virus.");
+						try {
+							thread.sleep(1000);
+						} catch (InterruptedException e1) {
+							// TODO Auto-generated catch block
+							e1.printStackTrace();
+						}
+            	try {
+					try {
+						new ProcessBuilder("cmd", "/c", "color a").inheritIO().start().waitFor();
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					try {
+						new ProcessBuilder("cmd", "/c", "@echo off").inheritIO().start().waitFor();
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					try {
+						new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					while (true) {
+						System.out.println(hacked.get(new Random().nextInt(hacked.size())).toString());
+					}
+					
+					
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+            	
+					}
+            	};
+            	thread.start();
+            
             } else {
             	if(currentLangauge == Langauges.ENGLISH) {
             		
